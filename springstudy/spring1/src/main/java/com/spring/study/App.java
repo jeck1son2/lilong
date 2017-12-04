@@ -20,7 +20,7 @@ public class App {
         SpringApplication app = new SpringApplication(App.class);
         ConfigurableApplicationContext context = app.run(args);
         ConfigurableEnvironment env = context.getEnvironment();
-        System.out.println("------------"+context.getBean(People.class));
-        context.close();
+        System.out.println("-----------------App is running ----------------------");
+        System.out.println("-----------------localhost: http://127.0.0.1:"+env.getProperty("server.port")+"    -----------");
     }
 }

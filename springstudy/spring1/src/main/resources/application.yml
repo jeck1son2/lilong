@@ -2,4 +2,4 @@ spring:
   application:
     name: spring1
   profiles:
-    active: kk,peer1
+    active: kk

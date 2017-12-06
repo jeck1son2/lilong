@@ -1,0 +1,2 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.spring.study.spring3.config.ConfigrationDetificate

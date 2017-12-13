@@ -16,10 +16,8 @@ public class BeanConfig {
 
     @Bean
     public Book book(){
-        System.out.println("--------------Book-----------------");
         Book book = new Book();
         book.setRemark(path);
-        System.out.println(book.toString()+"------------------");
         return book;
     }
 }

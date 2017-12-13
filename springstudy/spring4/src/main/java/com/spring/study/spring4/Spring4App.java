@@ -1,8 +1,14 @@
 package com.spring.study.spring4;
 
 import com.spring.study.spring3.domain.Pen;
+import com.spring.study.spring4.domain.Tree;
+import com.spring.study.spring4.mylistener.MyApplicationEvent;
+import com.spring.study.spring4.mylistener.MyApplicationEventListener;
+import com.spring.study.spring4.treeservice.PlatTreeService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ApplicationContext;
 import org.springframework.context.ConfigurableApplicationContext;
 
 /**
@@ -17,6 +23,15 @@ public class Spring4App {
     public static void main(String args[]){
         SpringApplication springApplication = new SpringApplication(Spring4App.class);
         ConfigurableApplicationContext context =springApplication.run(args);
-        System.out.println("--------------"+context.getBean(Pen.class));
+        PlatTreeService service = context.getBean(PlatTreeService.class);
+        //事件例子
+        service.platTree();
+        service.platTree();
+        service.platTree();
+        service.platTree();
+        service.platTree();
+        service.platTree();
+        service.platTree();
+        System.out.println("--------------"+context.getBean("bookMark"));
     }
 }

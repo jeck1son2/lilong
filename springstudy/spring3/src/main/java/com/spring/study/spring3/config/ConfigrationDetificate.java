@@ -5,6 +5,7 @@ import com.spring.study.spring3.domain.Pen;
 import com.spring.study.spring3.domain.Pencil;
 import com.spring.study.spring3.domain.PencilFactoryBean;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Conditional;
 import org.springframework.context.annotation.Configuration;
 
 /**
